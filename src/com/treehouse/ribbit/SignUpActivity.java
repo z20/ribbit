@@ -2,6 +2,7 @@ package com.treehouse.ribbit;
 
 import org.apache.http.ParseException;
 
+import android.app.ActionBar;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Intent;
@@ -25,8 +26,10 @@ public class SignUpActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		requestWindowFeature(Window.FEATURE_INDETERMINATE_PROGRESS);
-		
 		setContentView(R.layout.activity_sign_up);
+		
+		ActionBar actionBar = getActionBar();
+		actionBar.hide();
 		
 		mUsername = (EditText)findViewById(R.id.usernameField);
 		mPassword = (EditText)findViewById(R.id.passwordField);
