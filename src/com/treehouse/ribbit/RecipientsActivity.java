@@ -130,7 +130,7 @@ public class RecipientsActivity extends ListActivity {
 			if (message == null)  {
 				//error
 				AlertDialog.Builder builder = new AlertDialog.Builder(this);
-				builder.setMessage(R.string.error_selecting_string)
+				builder.setMessage(R.string.error_sending_message)
 					.setTitle(R.string.error_selecting_file_title)
 					.setPositiveButton(android.R.string.ok, null);
 				AlertDialog dialog = builder.create();
